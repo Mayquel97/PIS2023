@@ -47,7 +47,6 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
         jtxentrada.removeAllItems();
         for(Proveedor pro:prove){
             jtxentrada.addItem(new Proveedor(pro.getIdProveedor(), pro.getPrimerNombre()));
-            //jtxentrada.addItem(new Proveedor(String.valueOf(pro.getIdProveedor()), String.valueOf(pro.getPrimerNombre())));
         }    
     }
      public void getPorcentaje(){
@@ -56,6 +55,7 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
         listIva.addItem(new Iva("0%",1));
         listIva.addItem(new Iva("12%",2));
      }
+
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -97,7 +97,7 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
 
         labcodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labcodigo.setText("Codigo");
-        panMain.add(labcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
+        panMain.add(labcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 150, -1, -1));
 
         txtcodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtcodigo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -106,19 +106,19 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
                 txtcodigoActionPerformed(evt);
             }
         });
-        panMain.add(txtcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 160, 170, 30));
+        panMain.add(txtcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 170, 170, 30));
 
         labIdProve.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labIdProve.setText("ID Provedor");
-        panMain.add(labIdProve, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 130, -1, -1));
+        panMain.add(labIdProve, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 150, -1, -1));
 
         labFecha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labFecha.setText("Fecha");
-        panMain.add(labFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, -1, -1));
+        panMain.add(labFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, -1, -1));
 
         labSubTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labSubTotal.setText("Sub Total");
-        panMain.add(labSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 280, -1, 20));
+        panMain.add(labSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 290, -1, 20));
 
         txtSubTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtSubTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -127,15 +127,15 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
                 txtSubTotalActionPerformed(evt);
             }
         });
-        panMain.add(txtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 180, 30));
+        panMain.add(txtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 310, 180, 30));
 
         labIva.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labIva.setText("Iva");
-        panMain.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, -1, -1));
+        panMain.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 430, -1, -1));
 
         labSegundoApellido.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labSegundoApellido.setText("Total");
-        panMain.add(labSegundoApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 430, -1, -1));
+        panMain.add(labSegundoApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 290, 40, 20));
 
         txtTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -144,7 +144,7 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
                 txtTotalActionPerformed(evt);
             }
         });
-        panMain.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 450, 190, 30));
+        panMain.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 310, 190, 30));
 
         btnGuardar.setBackground(new java.awt.Color(204, 204, 204));
         btnGuardar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -176,31 +176,34 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
                 txtFecha2ActionPerformed(evt);
             }
         });
-        panMain.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 310, 210, 30));
+        panMain.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 210, 30));
 
         listIva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listIvaActionPerformed(evt);
             }
         });
-        panMain.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 450, 200, 30));
+        panMain.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 450, 200, 30));
 
         jtxentrada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxentradaActionPerformed(evt);
             }
         });
-        panMain.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 160, 200, 30));
+        panMain.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 170, 200, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(panMain, javax.swing.GroupLayout.DEFAULT_SIZE, 520, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(panMain, javax.swing.GroupLayout.DEFAULT_SIZE, 508, Short.MAX_VALUE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addComponent(panMain, javax.swing.GroupLayout.PREFERRED_SIZE, 668, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, Short.MAX_VALUE))
         );
@@ -239,6 +242,7 @@ public class formRegistroEntradasAdd1 extends javax.swing.JFrame {
            
             entra.setSubtotal(Float.parseFloat(txtSubTotal.getText()));
             entra.setValorIva((int) listIva.getItemAt(listIva.getSelectedIndex()).getValor());
+                       
            // entra.setTotal(Float.parseFloat(txtTotal.getText()));
             LocalDate fecha = LocalDate.parse(txtFecha2.getText(),DateTimeFormatter.ofPattern("dd/MM/yyyy")); 
             entra.setFechaEntrada(fecha);

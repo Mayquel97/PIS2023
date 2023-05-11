@@ -148,7 +148,7 @@ public class formRegistroEntradasEdit extends javax.swing.JFrame {
 
         labfecha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labfecha.setText("Fecha");
-        labSubTotal.add(labfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, -1, -1));
+        labSubTotal.add(labfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 380, -1, -1));
 
         txtCodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtCodigo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -157,11 +157,11 @@ public class formRegistroEntradasEdit extends javax.swing.JFrame {
                 txtCodigoActionPerformed(evt);
             }
         });
-        labSubTotal.add(txtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 200, 30));
+        labSubTotal.add(txtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 140, 200, 30));
 
         labIdProve.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labIdProve.setText("ID Provedor");
-        labSubTotal.add(labIdProve, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 110, -1, -1));
+        labSubTotal.add(labIdProve, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 120, -1, -1));
 
         btnGuardar.setBackground(new java.awt.Color(204, 204, 204));
         btnGuardar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -188,7 +188,7 @@ public class formRegistroEntradasEdit extends javax.swing.JFrame {
 
         labPrecio.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labPrecio.setText("Sub Total");
-        labSubTotal.add(labPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 260, -1, -1));
+        labSubTotal.add(labPrecio, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 260, -1, -1));
 
         txtSubTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtSubTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -197,30 +197,30 @@ public class formRegistroEntradasEdit extends javax.swing.JFrame {
                 txtSubTotalActionPerformed(evt);
             }
         });
-        labSubTotal.add(txtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 280, 200, 30));
+        labSubTotal.add(txtSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 280, 200, 30));
 
         labIva.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labIva.setText("Porcentaje IVA");
-        labSubTotal.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 390, -1, -1));
+        labSubTotal.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 380, -1, -1));
 
         labCodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labCodigo.setText("Código");
-        labSubTotal.add(labCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        labSubTotal.add(labCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 120, -1, 20));
 
         listIva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listIvaActionPerformed(evt);
             }
         });
-        labSubTotal.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 190, 30));
+        labSubTotal.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 400, 190, 30));
 
         labTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labTotal.setText("Total");
-        labSubTotal.add(labTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 390, -1, -1));
+        labSubTotal.add(labTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 260, -1, -1));
 
         txtFecha2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.DateFormatter(new java.text.SimpleDateFormat("dd/MM/yyyy"))));
         txtFecha2.setText("dd/MM/yyyy");
-        labSubTotal.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 270, 190, 30));
+        labSubTotal.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 400, 190, 30));
 
         txtTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -229,14 +229,14 @@ public class formRegistroEntradasEdit extends javax.swing.JFrame {
                 txtTotalActionPerformed(evt);
             }
         });
-        labSubTotal.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 410, 200, 30));
+        labSubTotal.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 280, 200, 30));
 
         jtxentrada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxentradaActionPerformed(evt);
             }
         });
-        labSubTotal.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 140, 170, 30));
+        labSubTotal.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 170, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);

@@ -97,7 +97,7 @@ public class formRegistroSalidasAdd extends javax.swing.JFrame {
 
         labcodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labcodigo.setText("Codigo");
-        panMain.add(labcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 110, -1, -1));
+        panMain.add(labcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 120, -1, -1));
 
         txtcodigo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtcodigo.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -106,19 +106,19 @@ public class formRegistroSalidasAdd extends javax.swing.JFrame {
                 txtcodigoActionPerformed(evt);
             }
         });
-        panMain.add(txtcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, 190, 30));
+        panMain.add(txtcodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 190, 30));
 
         labClien.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labClien.setText("ID Cliente");
-        panMain.add(labClien, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 110, -1, -1));
+        panMain.add(labClien, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         labFecha.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labFecha.setText("Fecha");
-        panMain.add(labFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
+        panMain.add(labFecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 400, 40, 20));
 
         labSubTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labSubTotal.setText("Sub Total");
-        panMain.add(labSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 240, -1, -1));
+        panMain.add(labSubTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 250, -1, -1));
 
         txtSubTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtSubTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -131,11 +131,11 @@ public class formRegistroSalidasAdd extends javax.swing.JFrame {
 
         labIva.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labIva.setText("Iva");
-        panMain.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 390, -1, -1));
+        panMain.add(labIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 400, 30, 20));
 
         labSegundoApellido.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         labSegundoApellido.setText("Total");
-        panMain.add(labSegundoApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, -1, -1));
+        panMain.add(labSegundoApellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 250, -1, -1));
 
         txtTotal.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtTotal.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 1, 0, new java.awt.Color(0, 0, 0)));
@@ -144,7 +144,7 @@ public class formRegistroSalidasAdd extends javax.swing.JFrame {
                 txtTotalActionPerformed(evt);
             }
         });
-        panMain.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 190, 30));
+        panMain.add(txtTotal, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 270, 190, 30));
 
         btnGuardar.setBackground(new java.awt.Color(204, 204, 204));
         btnGuardar.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -176,21 +176,21 @@ public class formRegistroSalidasAdd extends javax.swing.JFrame {
                 txtFecha2ActionPerformed(evt);
             }
         });
-        panMain.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 280, 170, 30));
+        panMain.add(txtFecha2, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, 170, 30));
 
         listIva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 listIvaActionPerformed(evt);
             }
         });
-        panMain.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, 200, 30));
+        panMain.add(listIva, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 420, 200, 30));
 
         jtxentrada.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jtxentradaActionPerformed(evt);
             }
         });
-        panMain.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 140, 200, 30));
+        panMain.add(jtxentrada, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, 200, 30));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
